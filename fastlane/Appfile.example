@@ -1,0 +1,7 @@
+# Copy this file to fastlane/Appfile and fill in your own values.
+# It is only needed for the release lanes (mac_release, ios_beta, ios_release).
+# The test and build lanes work without it.
+
+app_identifier("com.example.VizRemote")   # use the bundle ID you set in project.yml
+apple_id("you@example.com")               # the Apple ID that holds your Developer Program membership
+# team_id("XXXXXXXXXX")                   # Membership page on developer.apple.com/account

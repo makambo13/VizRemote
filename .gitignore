@@ -1,0 +1,23 @@
+.DS_Store
+
+# Build output
+.build/
+.build-xcode/
+.build-xcode-ios/
+DerivedData/
+*.xcresult
+
+# Xcode per-user files
+xcuserdata/
+*.xcuserstate
+
+# fastlane output and local credentials (copy fastlane/Appfile.example to fastlane/Appfile)
+fastlane/test_output/
+fastlane/report.xml
+fastlane/Appfile
+
+# Private working notes, not part of the public repo
+CLAUDE.md
+PIPELINE.md
+HANDOFF.md
+design/
