@@ -11,13 +11,23 @@ An unofficial remote control for VIZIO SmartCast TVs, for your Mac and your iPho
 
 <br>
 
-<img src="docs/screenshots/find-tv.png" alt="iPhone app listing two TVs found on the network" width="240">
+<img src="docs/screenshots/mac-find.png" alt="Mac menu bar app listing two TVs found on the network" width="250">
 &emsp;&emsp;
-<img src="docs/screenshots/pairing.png" alt="iPhone app asking for the 4-digit code shown on the TV" width="240">
+<img src="docs/screenshots/mac-remote.png" alt="Mac menu bar app showing the remote with volume, direction pad, inputs and apps" width="250">
 &emsp;&emsp;
-<img src="docs/screenshots/remote.png" alt="iPhone app showing the remote with volume, direction pad, inputs and apps" width="240">
+<img src="docs/screenshots/mac-off.png" alt="Mac menu bar app saying the TV is probably off, with a Try now button" width="250">
 
-<sub>The iPhone app, shown with sample data.</sub>
+<sub>The Mac app, in the menu bar.</sub>
+
+<br>
+
+<img src="docs/screenshots/iphone-find.png" alt="iPhone app listing two TVs found on the network" width="200">
+&emsp;&emsp;
+<img src="docs/screenshots/iphone-pairing.png" alt="iPhone app asking for the 4-digit code shown on the TV" width="200">
+&emsp;&emsp;
+<img src="docs/screenshots/iphone-remote.png" alt="iPhone app showing the remote with volume, direction pad, inputs and apps" width="200">
+
+<sub>The iPhone app. Both are shown with sample data.</sub>
 
 </div>
 
@@ -36,6 +46,8 @@ It is not made by VIZIO. VIZIO and SmartCast are trademarks of VIZIO, Inc., and 
 - Light, dark or system appearance.
 
 ## Getting started
+
+This branch holds both apps. If you only want one, the `macos` branch has just the Mac app and the `iphone` branch has just the iPhone app.
 
 You need a recent Xcode. The apps target macOS 14 and iOS 17.
 
