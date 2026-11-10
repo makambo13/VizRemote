@@ -34,40 +34,6 @@ def ensure_developer_account_configured
 end
 
 # ---------------------------------------------------------------------------
-# macOS (VizRemote)
-# ---------------------------------------------------------------------------
-
-desc "Run the macOS unit test suite (VizRemoteTests)"
-lane :mac_test do
-  run_tests(
-    project: PROJECT,
-    scheme: "VizRemote",
-    destination: "platform=macOS",
-    result_bundle: true
-  )
-end
-
-desc "Debug build sanity check — compiles the app, no signing/export/upload"
-lane :mac_build do
-  sh("cd .. && xcodebuild -project #{PROJECT} -scheme VizRemote -configuration Debug build")
-end
-
-desc "Archive, sign, and upload to the Mac App Store — requires a paid Developer Program membership"
-lane :mac_release do
-  ensure_developer_account_configured
-  build_mac_app(
-    project: PROJECT,
-    scheme: "VizRemote",
-    export_method: "app-store"
-  )
-  upload_to_app_store(
-    skip_screenshots: true,
-    skip_metadata: false,
-    submit_for_review: false # leave the actual review submission as a manual step for now
-  )
-end
-
-# ---------------------------------------------------------------------------
 # iOS (VizRemoteiOS)
 # ---------------------------------------------------------------------------
 
@@ -112,13 +78,11 @@ lane :ios_release do
 end
 
 # ---------------------------------------------------------------------------
-# Combined — what the Jenkins pipeline actually calls on every run
+# Combined
 # ---------------------------------------------------------------------------
 
-desc "Run both platforms' test suites and confirm both still build"
+desc "Run the iOS tests and confirm the app builds"
 lane :ci do
-  mac_test
-  mac_build
   ios_test
   ios_build
 end

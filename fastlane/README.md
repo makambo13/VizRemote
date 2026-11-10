@@ -13,30 +13,6 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 # Available Actions
 
-### mac_test
-
-```sh
-[bundle exec] fastlane mac_test
-```
-
-Run the macOS unit test suite (VizRemoteTests)
-
-### mac_build
-
-```sh
-[bundle exec] fastlane mac_build
-```
-
-Debug build sanity check — compiles the app, no signing/export/upload
-
-### mac_release
-
-```sh
-[bundle exec] fastlane mac_release
-```
-
-Archive, sign, and upload to the Mac App Store — requires a paid Developer Program membership
-
 ### ios_test
 
 ```sh
@@ -75,7 +51,7 @@ Archive, sign, and upload to the App Store — requires a paid Developer Program
 [bundle exec] fastlane ci
 ```
 
-Run both platforms' test suites and confirm both still build
+Run the iOS tests and confirm the app builds
 
 ----
 

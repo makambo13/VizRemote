@@ -7,62 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01D3E523C6FF60A9C0DCD9CC /* SubnetScanDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F2311585F98D3ABBD0BCA8 /* SubnetScanDiscovery.swift */; };
 		02F92EC84D229433748E8531 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09DD9269D304CDF6B6255F /* Theme.swift */; };
 		037D24BCC0FBA70CBD356EC8 /* TestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9123DA779251686B8B6A5 /* TestSupport.swift */; };
 		0A8C796ED80D982C0498968B /* RealSmartCastClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8315321575BAEBAEC139C2C4 /* RealSmartCastClient.swift */; };
-		0D5A53F8A5E8A2865B7F4FEE /* LocalNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C58F5E2B6DD1E00A220DC6 /* LocalNetworkTests.swift */; };
-		1C05E967AC851CF209DB64BD /* RealSmartCastClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8315321575BAEBAEC139C2C4 /* RealSmartCastClient.swift */; };
-		1FC067F450C08FAB3D6F76CA /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382DD57BE3DD74B1A3D8AC3D /* DiscoveryView.swift */; };
 		22D8148E30B64C6067C62BB1 /* RealSmartCastClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C026AD91A753F7048E18C08 /* RealSmartCastClientTests.swift */; };
 		251D9A0982CBCBB4934C3941 /* PhoneSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B2C0A96431CEDF590AD0A /* PhoneSettingsView.swift */; };
-		2C5659F67449502C2DE37754 /* RealSmartCastClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C026AD91A753F7048E18C08 /* RealSmartCastClientTests.swift */; };
 		2EFF6B5AA53EC5B1F9110660 /* PhoneSearchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8264A03603EAB7AC780ED7D /* PhoneSearchingView.swift */; };
-		31E8281F4D29670E0471E7A4 /* ReachabilityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F59778670660BEF8B7B155 /* ReachabilityMonitor.swift */; };
-		338FD2A7D756F7C7F59365DA /* SSDPDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FCBFAC1B2D84C56F3217FB /* SSDPDiscovery.swift */; };
-		399A211FE6669FC15931EE7B /* RemoteViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F664792DFCBBD5CB20B18222 /* RemoteViewModelTests.swift */; };
 		39FB47479740899D3A684EA0 /* PhoneFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F3C764F6508D76E130F6A /* PhoneFoundView.swift */; };
 		411493B414399D7A5FBC838B /* LocalNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C58F5E2B6DD1E00A220DC6 /* LocalNetworkTests.swift */; };
-		44F0DA576B7CA8B9184E0032 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD3CF91E6121D732FCA3EF /* SettingsView.swift */; };
 		455DE4BB1899A974BD5E62C1 /* RemoteViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F664792DFCBBD5CB20B18222 /* RemoteViewModelTests.swift */; };
-		46DA0DFA04CDFC2EF901E7AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7037473D83975F63449DF6B /* Assets.xcassets */; };
 		53C990BED8262EC8DF0280F7 /* ModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB52CE464ADC62E0E1C4A94 /* ModelsTests.swift */; };
 		56CD72CE146AB73F4483A126 /* RemoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D654A3C78E459FDC53631 /* RemoteViewModel.swift */; };
-		600B820DA42B6CCBB27EB0CE /* RemoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D654A3C78E459FDC53631 /* RemoteViewModel.swift */; };
 		623C8573D8F913F52D2CF9C5 /* SubnetScanDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F2311585F98D3ABBD0BCA8 /* SubnetScanDiscovery.swift */; };
-		69E0FF6F4BBE072BBA28B328 /* KeychainStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54435333300E5D9BABF74F92 /* KeychainStoreTests.swift */; };
 		6F5EE672F99D871B8E36782F /* PhonePairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A6C9440DCA247A1DB0C3C /* PhonePairingView.swift */; };
-		72468B349412C343ACAB1331 /* VizRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC59B1B17D27BF1719ECB90 /* VizRemoteApp.swift */; };
 		79A8F780F0E40C6303E41E31 /* ReachabilityMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25448618AA885E73BEA0B8CD /* ReachabilityMonitorTests.swift */; };
 		816D9804E5369DB30646B3F0 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C041BE29FF617297FEB401 /* MockURLProtocol.swift */; };
-		817F6E401A7F92CBA16E65F5 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358F81B2D9782130674FA38 /* AppModel.swift */; };
-		8351379D5FD25ACDF8529D94 /* TestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9123DA779251686B8B6A5 /* TestSupport.swift */; };
-		8754864CFAC90D7D7DEDB4E1 /* ReachabilityMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25448618AA885E73BEA0B8CD /* ReachabilityMonitorTests.swift */; };
 		8C94B4C0FAF7816ECBF8F160 /* FakeSmartCastClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99345F7B1307FFD4219DAEAF /* FakeSmartCastClientTests.swift */; };
+		8E4EB46006B450497B8B7961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0456AD82BE058727533B0C36 /* Assets.xcassets */; };
 		921060BEC6CC812919D50AF2 /* PhoneRemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C9224D642DD64C8E46342 /* PhoneRemoteView.swift */; };
-		973EB535B9EDD81B2E6C1416 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C041BE29FF617297FEB401 /* MockURLProtocol.swift */; };
 		9774C62C9159F5082CC83C78 /* PhoneRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436143E360C7435B9AF60312 /* PhoneRootView.swift */; };
-		993369F81A724E734F19BEEC /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19410B7D2ABFCFC8007BBD5E /* AppModelTests.swift */; };
-		9B6023E6DC3FE55F752C3748 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09DD9269D304CDF6B6255F /* Theme.swift */; };
-		9CFEE2DF7EAF84E55BE36D65 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7CA9369F391931831D3751 /* Models.swift */; };
 		9D983BAFA5FD1A58FDC1AB50 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0D9E698C61FEDA914DA6B /* KeychainStore.swift */; };
-		A0BD757A6B423D9D88178FC6 /* SmartCastClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120362223FDFF10025F1B46 /* SmartCastClient.swift */; };
 		A0FBA75F5A8D43B2925325F5 /* VizRemoteiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3340116AB318EE0BF1198C9E /* VizRemoteiOSApp.swift */; };
-		A39789CDD5C0AD6C74C76716 /* ModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB52CE464ADC62E0E1C4A94 /* ModelsTests.swift */; };
-		AE22EEA1D4CEE558CAA3B53C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7037473D83975F63449DF6B /* Assets.xcassets */; };
-		AFB70141E1A44B48ED479FD3 /* SearchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B27FAAF28A4C408F2BE2416 /* SearchingView.swift */; };
 		B22E5CF8033DBA069375C448 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E3430BB0D6C00E1472FE8 /* SplashView.swift */; };
 		B490D4F581606257DEEEAA56 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7CA9369F391931831D3751 /* Models.swift */; };
 		BAEEC9E22A4D90CBD6B55AB2 /* SmartCastClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120362223FDFF10025F1B46 /* SmartCastClient.swift */; };
 		C9205D1042292C0323768AE0 /* ReachabilityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F59778670660BEF8B7B155 /* ReachabilityMonitor.swift */; };
-		CA5A37AC5511F62F3D8C39EE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09205F8276A624F4C2031609 /* RootView.swift */; };
-		CF0178A9C9FD1357DBDB02B6 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0D9E698C61FEDA914DA6B /* KeychainStore.swift */; };
-		D1C5323C3AD33C5487B287B9 /* PairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F525E723A7D5D5E27AC8AD8 /* PairingView.swift */; };
 		DA71AFEB3866BEF549228FA2 /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19410B7D2ABFCFC8007BBD5E /* AppModelTests.swift */; };
 		DD32F9B6230BC4C212036DE5 /* KeychainStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54435333300E5D9BABF74F92 /* KeychainStoreTests.swift */; };
-		E7822C3784F34F32E86C4BA7 /* FakeSmartCastClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99345F7B1307FFD4219DAEAF /* FakeSmartCastClientTests.swift */; };
 		EF1B15D1BBD0E7B376FF58E6 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358F81B2D9782130674FA38 /* AppModel.swift */; };
-		FFE9F61DCAB11416166B603E /* RemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA339E53DA55429D1C6B492 /* RemoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,56 +45,37 @@
 			remoteGlobalIDString = F039C104A5813362526ED230;
 			remoteInfo = VizRemoteiOS;
 		};
-		5CBA26E19DCB87B9BEC33E82 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BD92777DFD6803F8E9357857 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7F9D5780FBEDA1DD70022248;
-			remoteInfo = VizRemote;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09205F8276A624F4C2031609 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		0456AD82BE058727533B0C36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15D0E1D7287CFFBD28835DB1 /* VizRemoteiOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VizRemoteiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1763407CB459E2BBC99C5164 /* VizRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VizRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19410B7D2ABFCFC8007BBD5E /* AppModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModelTests.swift; sourceTree = "<group>"; };
-		1B597A57BE0401AD212ED3AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1C026AD91A753F7048E18C08 /* RealSmartCastClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealSmartCastClientTests.swift; sourceTree = "<group>"; };
 		2120362223FDFF10025F1B46 /* SmartCastClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCastClient.swift; sourceTree = "<group>"; };
 		25448618AA885E73BEA0B8CD /* ReachabilityMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityMonitorTests.swift; sourceTree = "<group>"; };
 		3340116AB318EE0BF1198C9E /* VizRemoteiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VizRemoteiOSApp.swift; sourceTree = "<group>"; };
 		3358F81B2D9782130674FA38 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
-		382DD57BE3DD74B1A3D8AC3D /* DiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryView.swift; sourceTree = "<group>"; };
 		38C58F5E2B6DD1E00A220DC6 /* LocalNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetworkTests.swift; sourceTree = "<group>"; };
-		3F525E723A7D5D5E27AC8AD8 /* PairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingView.swift; sourceTree = "<group>"; };
 		410B2C0A96431CEDF590AD0A /* PhoneSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSettingsView.swift; sourceTree = "<group>"; };
 		436143E360C7435B9AF60312 /* PhoneRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRootView.swift; sourceTree = "<group>"; };
-		43B3BA955E68644F4A7BCC6E /* VizRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VizRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB52CE464ADC62E0E1C4A94 /* ModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsTests.swift; sourceTree = "<group>"; };
 		54435333300E5D9BABF74F92 /* KeychainStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStoreTests.swift; sourceTree = "<group>"; };
 		5EF9123DA779251686B8B6A5 /* TestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSupport.swift; sourceTree = "<group>"; };
 		628D654A3C78E459FDC53631 /* RemoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewModel.swift; sourceTree = "<group>"; };
 		7E7CA9369F391931831D3751 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		8315321575BAEBAEC139C2C4 /* RealSmartCastClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealSmartCastClient.swift; sourceTree = "<group>"; };
-		83AD3CF91E6121D732FCA3EF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8AD3A00585D9C39B7E929010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		90F59778670660BEF8B7B155 /* ReachabilityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityMonitor.swift; sourceTree = "<group>"; };
 		95C041BE29FF617297FEB401 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		99345F7B1307FFD4219DAEAF /* FakeSmartCastClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSmartCastClientTests.swift; sourceTree = "<group>"; };
 		99F2311585F98D3ABBD0BCA8 /* SubnetScanDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubnetScanDiscovery.swift; sourceTree = "<group>"; };
-		9B27FAAF28A4C408F2BE2416 /* SearchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingView.swift; sourceTree = "<group>"; };
-		9CA339E53DA55429D1C6B492 /* RemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteView.swift; sourceTree = "<group>"; };
-		9DC59B1B17D27BF1719ECB90 /* VizRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VizRemoteApp.swift; sourceTree = "<group>"; };
-		A5FCBFAC1B2D84C56F3217FB /* SSDPDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSDPDiscovery.swift; sourceTree = "<group>"; };
-		A7037473D83975F63449DF6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFC0D9E698C61FEDA914DA6B /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
 		BF6C9224D642DD64C8E46342 /* PhoneRemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRemoteView.swift; sourceTree = "<group>"; };
 		C52E3430BB0D6C00E1472FE8 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E23A6C9440DCA247A1DB0C3C /* PhonePairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonePairingView.swift; sourceTree = "<group>"; };
 		E8264A03603EAB7AC780ED7D /* PhoneSearchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSearchingView.swift; sourceTree = "<group>"; };
 		EB0F3C764F6508D76E130F6A /* PhoneFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFoundView.swift; sourceTree = "<group>"; };
-		F39CC3882936D8C0D3C33311 /* VizRemote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VizRemote.entitlements; sourceTree = "<group>"; };
 		F664792DFCBBD5CB20B18222 /* RemoteViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewModelTests.swift; sourceTree = "<group>"; };
 		F83F3A7A5CF2EF3AF7296F53 /* VizRemoteiOSTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = VizRemoteiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF09DD9269D304CDF6B6255F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -147,29 +100,27 @@
 			path = Tests/VizRemoteSharedTests;
 			sourceTree = "<group>";
 		};
+		47F559504A8667D50F92445D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0456AD82BE058727533B0C36 /* Assets.xcassets */,
+			);
+			name = Resources;
+			path = Sources/VizRemote/Resources;
+			sourceTree = "<group>";
+		};
 		7B0F2EDD4ACDEF09EB8D9DD2 /* VizRemote */ = {
 			isa = PBXGroup;
 			children = (
 				3358F81B2D9782130674FA38 /* AppModel.swift */,
-				382DD57BE3DD74B1A3D8AC3D /* DiscoveryView.swift */,
-				1B597A57BE0401AD212ED3AB /* Info.plist */,
 				AFC0D9E698C61FEDA914DA6B /* KeychainStore.swift */,
 				7E7CA9369F391931831D3751 /* Models.swift */,
-				3F525E723A7D5D5E27AC8AD8 /* PairingView.swift */,
 				90F59778670660BEF8B7B155 /* ReachabilityMonitor.swift */,
 				8315321575BAEBAEC139C2C4 /* RealSmartCastClient.swift */,
-				9CA339E53DA55429D1C6B492 /* RemoteView.swift */,
 				628D654A3C78E459FDC53631 /* RemoteViewModel.swift */,
-				09205F8276A624F4C2031609 /* RootView.swift */,
-				9B27FAAF28A4C408F2BE2416 /* SearchingView.swift */,
-				83AD3CF91E6121D732FCA3EF /* SettingsView.swift */,
 				2120362223FDFF10025F1B46 /* SmartCastClient.swift */,
-				A5FCBFAC1B2D84C56F3217FB /* SSDPDiscovery.swift */,
 				99F2311585F98D3ABBD0BCA8 /* SubnetScanDiscovery.swift */,
 				FF09DD9269D304CDF6B6255F /* Theme.swift */,
-				F39CC3882936D8C0D3C33311 /* VizRemote.entitlements */,
-				9DC59B1B17D27BF1719ECB90 /* VizRemoteApp.swift */,
-				D44E3F3C994DBDF5D667805D /* Resources */,
 			);
 			name = VizRemote;
 			path = Sources/VizRemote;
@@ -195,10 +146,8 @@
 		C2027D675DB2064028D46390 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1763407CB459E2BBC99C5164 /* VizRemote.app */,
 				15D0E1D7287CFFBD28835DB1 /* VizRemoteiOS.app */,
 				F83F3A7A5CF2EF3AF7296F53 /* VizRemoteiOSTests.xctest */,
-				43B3BA955E68644F4A7BCC6E /* VizRemoteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,6 +155,7 @@
 		C6E17178B91A684C34942485 = {
 			isa = PBXGroup;
 			children = (
+				47F559504A8667D50F92445D /* Resources */,
 				7B0F2EDD4ACDEF09EB8D9DD2 /* VizRemote */,
 				824B6CF8B85DF115CCE1FC11 /* VizRemoteiOS */,
 				1BD1BA6A06A839384F5B8F9D /* VizRemoteSharedTests */,
@@ -213,35 +163,9 @@
 			);
 			sourceTree = "<group>";
 		};
-		D44E3F3C994DBDF5D667805D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A7037473D83975F63449DF6B /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7F9D5780FBEDA1DD70022248 /* VizRemote */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 33FF029549767051301FADE2 /* Build configuration list for PBXNativeTarget "VizRemote" */;
-			buildPhases = (
-				0A8B0BB02E359DE143C491AA /* Sources */,
-				934F79693F1246076903E303 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = VizRemote;
-			packageProductDependencies = (
-			);
-			productName = VizRemote;
-			productReference = 1763407CB459E2BBC99C5164 /* VizRemote.app */;
-			productType = "com.apple.product-type.application";
-		};
 		CB8A8E7F84F70BD210D62A6D /* VizRemoteiOSTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6286B0A536FB0A994A88F63 /* Build configuration list for PBXNativeTarget "VizRemoteiOSTests" */;
@@ -278,24 +202,6 @@
 			productReference = 15D0E1D7287CFFBD28835DB1 /* VizRemoteiOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F100549D6346E548E7E66B7B /* VizRemoteTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3DBE1FE8B380FD2CB23E1302 /* Build configuration list for PBXNativeTarget "VizRemoteTests" */;
-			buildPhases = (
-				1B3E33C34047421A5576F700 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3CBBB19D3D15D1B212F0EC6D /* PBXTargetDependency */,
-			);
-			name = VizRemoteTests;
-			packageProductDependencies = (
-			);
-			productName = VizRemoteTests;
-			productReference = 43B3BA955E68644F4A7BCC6E /* VizRemoteTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -305,12 +211,6 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					7F9D5780FBEDA1DD70022248 = {
-						ProvisioningStyle = Automatic;
-					};
-					F100549D6346E548E7E66B7B = {
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = B495126D0CED112FA27DE793 /* Build configuration list for PBXProject "VizRemote" */;
@@ -327,8 +227,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F9D5780FBEDA1DD70022248 /* VizRemote */,
-				F100549D6346E548E7E66B7B /* VizRemoteTests */,
 				F039C104A5813362526ED230 /* VizRemoteiOS */,
 				CB8A8E7F84F70BD210D62A6D /* VizRemoteiOSTests */,
 			);
@@ -340,62 +238,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE22EEA1D4CEE558CAA3B53C /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		934F79693F1246076903E303 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46DA0DFA04CDFC2EF901E7AD /* Assets.xcassets in Resources */,
+				8E4EB46006B450497B8B7961 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0A8B0BB02E359DE143C491AA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				817F6E401A7F92CBA16E65F5 /* AppModel.swift in Sources */,
-				1FC067F450C08FAB3D6F76CA /* DiscoveryView.swift in Sources */,
-				CF0178A9C9FD1357DBDB02B6 /* KeychainStore.swift in Sources */,
-				9CFEE2DF7EAF84E55BE36D65 /* Models.swift in Sources */,
-				D1C5323C3AD33C5487B287B9 /* PairingView.swift in Sources */,
-				31E8281F4D29670E0471E7A4 /* ReachabilityMonitor.swift in Sources */,
-				1C05E967AC851CF209DB64BD /* RealSmartCastClient.swift in Sources */,
-				FFE9F61DCAB11416166B603E /* RemoteView.swift in Sources */,
-				600B820DA42B6CCBB27EB0CE /* RemoteViewModel.swift in Sources */,
-				CA5A37AC5511F62F3D8C39EE /* RootView.swift in Sources */,
-				338FD2A7D756F7C7F59365DA /* SSDPDiscovery.swift in Sources */,
-				AFB70141E1A44B48ED479FD3 /* SearchingView.swift in Sources */,
-				44F0DA576B7CA8B9184E0032 /* SettingsView.swift in Sources */,
-				A0BD757A6B423D9D88178FC6 /* SmartCastClient.swift in Sources */,
-				01D3E523C6FF60A9C0DCD9CC /* SubnetScanDiscovery.swift in Sources */,
-				9B6023E6DC3FE55F752C3748 /* Theme.swift in Sources */,
-				72468B349412C343ACAB1331 /* VizRemoteApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1B3E33C34047421A5576F700 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				993369F81A724E734F19BEEC /* AppModelTests.swift in Sources */,
-				E7822C3784F34F32E86C4BA7 /* FakeSmartCastClientTests.swift in Sources */,
-				69E0FF6F4BBE072BBA28B328 /* KeychainStoreTests.swift in Sources */,
-				0D5A53F8A5E8A2865B7F4FEE /* LocalNetworkTests.swift in Sources */,
-				973EB535B9EDD81B2E6C1416 /* MockURLProtocol.swift in Sources */,
-				A39789CDD5C0AD6C74C76716 /* ModelsTests.swift in Sources */,
-				8754864CFAC90D7D7DEDB4E1 /* ReachabilityMonitorTests.swift in Sources */,
-				2C5659F67449502C2DE37754 /* RealSmartCastClientTests.swift in Sources */,
-				399A211FE6669FC15931EE7B /* RemoteViewModelTests.swift in Sources */,
-				8351379D5FD25ACDF8529D94 /* TestSupport.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8F97B9A101584D59A40823A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,11 +289,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3CBBB19D3D15D1B212F0EC6D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7F9D5780FBEDA1DD70022248 /* VizRemote */;
-			targetProxy = 5CBA26E19DCB87B9BEC33E82 /* PBXContainerItemProxy */;
-		};
 		F5D746353E7805375A5159F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F039C104A5813362526ED230 /* VizRemoteiOS */;
@@ -453,25 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03970049EBA597D6000A1E99 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.VizRemoteTests;
-				SDKROOT = macosx;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VizRemote.app/Contents/MacOS/VizRemote";
-			};
-			name = Debug;
-		};
 		5538648A18BEDE6B19806EF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -489,46 +314,6 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VizRemoteiOS.app/VizRemoteiOS";
 			};
 			name = Debug;
-		};
-		554887C0D4714A486FFE2260 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Sources/VizRemote/VizRemote.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_HARDENED_RUNTIME = NO;
-				INFOPLIST_FILE = Sources/VizRemote/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.VizRemote;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		7794F9840CEC37247C58A71E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.VizRemoteTests;
-				SDKROOT = macosx;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VizRemote.app/Contents/MacOS/VizRemote";
-			};
-			name = Release;
 		};
 		81324C2CF3967F8B0A60FB95 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -641,30 +426,10 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		B34563D092F9342731CC7C17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Sources/VizRemote/VizRemote.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_HARDENED_RUNTIME = NO;
-				INFOPLIST_FILE = Sources/VizRemote/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.VizRemote;
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -716,6 +481,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -725,24 +491,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		33FF029549767051301FADE2 /* Build configuration list for PBXNativeTarget "VizRemote" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B34563D092F9342731CC7C17 /* Debug */,
-				554887C0D4714A486FFE2260 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		3DBE1FE8B380FD2CB23E1302 /* Build configuration list for PBXNativeTarget "VizRemoteTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				03970049EBA597D6000A1E99 /* Debug */,
-				7794F9840CEC37247C58A71E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		6B45D217E1CBB5A5C907085B /* Build configuration list for PBXNativeTarget "VizRemoteiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

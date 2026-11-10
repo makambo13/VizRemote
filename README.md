@@ -1,41 +1,32 @@
 <div align="center">
 
-# VizRemote
+# VizRemote for iPhone
 
-An unofficial remote control for VIZIO SmartCast TVs, for your Mac and your iPhone.
+An unofficial remote control for VIZIO SmartCast TVs.
 
 ![Swift](https://img.shields.io/badge/Swift-F05138?logo=swift&logoColor=white)
-![macOS 14+](https://img.shields.io/badge/macOS-14%2B-000000?logo=apple&logoColor=white)
 ![iOS 17+](https://img.shields.io/badge/iOS-17%2B-000000?logo=apple&logoColor=white)
 ![SwiftUI](https://img.shields.io/badge/UI-SwiftUI-0A84FF)
 
 <br>
 
-<img src="docs/screenshots/mac-find.png" alt="Mac menu bar app listing two TVs found on the network" width="250">
+<img src="docs/screenshots/iphone-find.png" alt="iPhone app listing two TVs found on the network" width="230">
 &emsp;&emsp;
-<img src="docs/screenshots/mac-remote.png" alt="Mac menu bar app showing the remote with volume, direction pad, inputs and apps" width="250">
+<img src="docs/screenshots/iphone-pairing.png" alt="iPhone app asking for the 4-digit code shown on the TV" width="230">
 &emsp;&emsp;
-<img src="docs/screenshots/mac-off.png" alt="Mac menu bar app saying the TV is probably off, with a Try now button" width="250">
+<img src="docs/screenshots/iphone-remote.png" alt="iPhone app showing the remote with volume, direction pad, inputs and apps" width="230">
 
-<sub>The Mac app, in the menu bar.</sub>
-
-<br>
-
-<img src="docs/screenshots/iphone-find.png" alt="iPhone app listing two TVs found on the network" width="200">
-&emsp;&emsp;
-<img src="docs/screenshots/iphone-pairing.png" alt="iPhone app asking for the 4-digit code shown on the TV" width="200">
-&emsp;&emsp;
-<img src="docs/screenshots/iphone-remote.png" alt="iPhone app showing the remote with volume, direction pad, inputs and apps" width="200">
-
-<sub>The iPhone app. Both are shown with sample data.</sub>
+<sub>The iPhone app, shown with sample data.</sub>
 
 </div>
 
 ## About
 
-VizRemote talks straight to your TV over your home network. There is no account, no cloud service and no tracking. The Mac app sits in the menu bar, and the iPhone app is the same remote in your pocket.
+VizRemote talks straight to your TV over your home network. There is no account, no cloud service and no tracking. It is the same remote as the Mac app, in your pocket.
 
 It is not made by VIZIO. VIZIO and SmartCast are trademarks of VIZIO, Inc., and this project is not affiliated with or endorsed by them. The app shortcuts use plain colored tiles with a letter, not the streaming services' logos.
+
+This branch has only the iPhone app. The `main` branch has both apps, and the `macos` branch has only the Mac app.
 
 ## Features
 
@@ -47,17 +38,15 @@ It is not made by VIZIO. VIZIO and SmartCast are trademarks of VIZIO, Inc., and 
 
 ## Getting started
 
-This branch holds both apps. If you only want one, the `macos` branch has just the Mac app and the `iphone` branch has just the iPhone app.
-
-You need a recent Xcode. The apps target macOS 14 and iOS 17.
+You need a recent Xcode. The app targets iOS 17 and runs on iPhone.
 
 ```bash
-git clone https://github.com/makambo13/VizRemote.git
+git clone --branch iphone https://github.com/makambo13/VizRemote.git
 cd VizRemote
 open VizRemote.xcodeproj
 ```
 
-Choose the `VizRemote` scheme for the Mac app or `VizRemoteiOS` for the iPhone app, pick your own team under Signing, and run it. The bundle IDs are `com.example.*`. Change them in `project.yml` and run `xcodegen generate` ([XcodeGen](https://github.com/yonaskolb/XcodeGen) builds the Xcode project from that file).
+Pick your own team under Signing and run the `VizRemoteiOS` scheme on a simulator or an iPhone. To test with a real TV you need a real iPhone on the same Wi-Fi network as the TV. The bundle ID is `com.example.VizRemote.iOS`. Change it in `project.yml` and run `xcodegen generate` ([XcodeGen](https://github.com/yonaskolb/XcodeGen) builds the Xcode project from that file).
 
 ## Using it
 
@@ -77,17 +66,17 @@ VIZIO doesn't publish the API, so this follows the community [pyvizio](https://g
 
 ## Tests
 
-There are 84 unit tests, shared by the Mac and iPhone apps. Run them with ⌘U in Xcode, or:
+There are 84 unit tests. Run them with ⌘U in Xcode, or:
 
 ```bash
 fastlane ci
 ```
 
-That runs the tests and builds for both apps. For the iPhone app it picks an installed iPhone simulator. To choose one yourself, set `IOS_SIMULATOR_DESTINATION`, for example `id=<simulator id>`.
+That runs the tests and checks that the app builds. It picks an installed iPhone simulator. To choose one yourself, set `IOS_SIMULATOR_DESTINATION`, for example `id=<simulator id>`.
 
 ## Releasing
 
-The `Jenkinsfile` runs `fastlane ci`. The lanes that upload to the App Store need a paid Apple Developer Program membership and a `fastlane/Appfile` (copy `fastlane/Appfile.example`). The app is not on the App Store yet.
+The `Jenkinsfile` runs `fastlane ci`. The lanes that upload to TestFlight and the App Store need a paid Apple Developer Program membership and a `fastlane/Appfile` (copy `fastlane/Appfile.example`). The app is not on the App Store yet.
 
 ## Limits and help
 
