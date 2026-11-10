@@ -59,6 +59,10 @@ After that the remote opens, and the app reconnects to the same TV next time.
 
 VIZIO doesn't publish the API, so this follows the community [pyvizio](https://github.com/raman325/pyvizio) project. The TV runs a small HTTPS service on port 7345 with a self-signed certificate, which the app accepts for the TV's address only. Everything the app asks of the TV goes through the `SmartCastClient` protocol, so tests and previews use a fake TV instead of a real one.
 
+<p align="center">
+  <img src="docs/architecture.png" alt="Diagram: the SwiftUI views use AppModel and RemoteViewModel. AppModel finds TVs, stores the token in the Keychain and creates the client. RemoteViewModel and ReachabilityMonitor talk to the TV through the SmartCastClient protocol, which RealSmartCastClient implements over HTTPS and FakeSmartCastClient implements for previews and tests." width="760">
+</p>
+
 ## Tests
 
 There are 84 unit tests, shared by the Mac and iPhone apps. Run them with ⌘U in Xcode, or:
