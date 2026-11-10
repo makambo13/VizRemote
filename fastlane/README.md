@@ -37,45 +37,13 @@ Debug build sanity check — compiles the app, no signing/export/upload
 
 Archive, sign, and upload to the Mac App Store — requires a paid Developer Program membership
 
-### ios_test
-
-```sh
-[bundle exec] fastlane ios_test
-```
-
-Run the iOS unit test suite (VizRemoteiOSTests) on the iPhone 17 simulator
-
-### ios_build
-
-```sh
-[bundle exec] fastlane ios_build
-```
-
-Debug build sanity check for the simulator — compiles the app, no signing/export/upload
-
-### ios_beta
-
-```sh
-[bundle exec] fastlane ios_beta
-```
-
-Archive, sign, and upload to TestFlight — requires a paid Developer Program membership
-
-### ios_release
-
-```sh
-[bundle exec] fastlane ios_release
-```
-
-Archive, sign, and upload to the App Store — requires a paid Developer Program membership
-
 ### ci
 
 ```sh
 [bundle exec] fastlane ci
 ```
 
-Run both platforms' test suites and confirm both still build
+Run the macOS tests and confirm the app builds
 
 ----
 

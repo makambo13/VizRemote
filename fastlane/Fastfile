@@ -1,25 +1,6 @@
 default_platform(:ios)
 
 PROJECT = "VizRemote.xcodeproj"
-require "json"
-
-# fastlane's `device:` option calls `xcrun simctl runtime match list`, which some fastlane
-# versions cannot parse on newer Xcode releases. Passing a raw xcodebuild destination skips
-# that step. By default this picks an available iPhone simulator on the newest iOS runtime.
-# Set IOS_SIMULATOR_DESTINATION (for example "id=<simulator id>") to choose a specific one.
-def default_ios_simulator_destination
-  devices = JSON.parse(`xcrun simctl list devices available -j`)["devices"]
-  newest_first = devices.keys.select { |runtime| runtime.include?("iOS") }
-                        .sort_by { |runtime| runtime.scan(/\d+/).map(&:to_i) }.reverse
-  newest_first.each do |runtime|
-    phone = devices[runtime].find { |device| device["name"].start_with?("iPhone") }
-    return "id=#{phone['udid']}" if phone
-  end
-  UI.user_error!("No iPhone simulator is installed. Install one in Xcode, or set IOS_SIMULATOR_DESTINATION.")
-end
-
-IOS_SIMULATOR_DESTINATION = ENV["IOS_SIMULATOR_DESTINATION"] || default_ios_simulator_destination
-
 def ensure_developer_account_configured
   team_id = ENV["FASTLANE_TEAM_ID"] || CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
   unless team_id
@@ -68,57 +49,11 @@ lane :mac_release do
 end
 
 # ---------------------------------------------------------------------------
-# iOS (VizRemoteiOS)
+# Combined
 # ---------------------------------------------------------------------------
 
-desc "Run the iOS unit test suite (VizRemoteiOSTests) on the iPhone 17 simulator"
-lane :ios_test do
-  # fastlane's `run_tests`/`scan` action calls `xcrun simctl runtime match list`
-  # internally during preflight, which this fastlane version (2.227.0) fails to parse
-  # against Xcode 17/iOS 26.5's newer output format regardless of device/destination —
-  # shelling straight to xcodebuild avoids that broken path entirely.
-  sh("cd .. && xcodebuild test -project #{PROJECT} -scheme VizRemoteiOS -destination '#{IOS_SIMULATOR_DESTINATION}' -enableCodeCoverage YES")
-end
-
-desc "Debug build sanity check for the simulator — compiles the app, no signing/export/upload"
-lane :ios_build do
-  sh("cd .. && xcodebuild -project #{PROJECT} -scheme VizRemoteiOS -configuration Debug -sdk iphonesimulator build")
-end
-
-desc "Archive, sign, and upload to TestFlight — requires a paid Developer Program membership"
-lane :ios_beta do
-  ensure_developer_account_configured
-  build_app(
-    project: PROJECT,
-    scheme: "VizRemoteiOS",
-    export_method: "app-store"
-  )
-  upload_to_testflight(skip_waiting_for_build_processing: true)
-end
-
-desc "Archive, sign, and upload to the App Store — requires a paid Developer Program membership"
-lane :ios_release do
-  ensure_developer_account_configured
-  build_app(
-    project: PROJECT,
-    scheme: "VizRemoteiOS",
-    export_method: "app-store"
-  )
-  upload_to_app_store(
-    skip_screenshots: true,
-    skip_metadata: false,
-    submit_for_review: false
-  )
-end
-
-# ---------------------------------------------------------------------------
-# Combined — what the Jenkins pipeline actually calls on every run
-# ---------------------------------------------------------------------------
-
-desc "Run both platforms' test suites and confirm both still build"
+desc "Run the macOS tests and confirm the app builds"
 lane :ci do
   mac_test
   mac_build
-  ios_test
-  ios_build
 end

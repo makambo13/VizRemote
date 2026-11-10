@@ -1,5 +1,5 @@
 # Copy this file to fastlane/Appfile and fill in your own values.
-# It is only needed for the release lanes (mac_release, ios_beta, ios_release).
+# It is only needed for the release lanes (mac_release).
 # The test and build lanes work without it.
 
 app_identifier("com.example.VizRemote")   # use the bundle ID you set in project.yml
